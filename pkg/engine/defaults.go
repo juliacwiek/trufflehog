@@ -733,6 +733,7 @@ import (
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/twilio"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/twist"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/twitch"
+	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/twitchaccesstoken"
 	twitterv1 "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/twitter/v1"
 	twitterv2 "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/twitter/v2"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/twitterconsumerkey"
@@ -1493,6 +1494,7 @@ func DefaultDetectors() []detectors.Detector {
 		interseller.Scanner{},
 		tickettailor.Scanner{},
 		twitch.Scanner{},
+		twitchaccesstoken.Scanner{},
 		rentman.Scanner{},
 		tefter.Scanner{},
 		pollsapi.Scanner{},
